@@ -1,12 +1,5 @@
 import './blog.css';
 
-document.addEventListener("DOMContentLoaded", function () {
-    const button = document.getElementById("jsButton");
-    
-    button.addEventListener("click", function () {
-        alert("Button Clicked!");
-    });
-});
 
 return (
 
