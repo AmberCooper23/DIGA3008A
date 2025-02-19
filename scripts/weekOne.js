@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <article> My experience setting up GitHub and publishing to Pages </article>
+import './blog.css';
+
+{/* <article class="headings"> My experience setting up GitHub and publishing to Pages </article>
 
 Over the holiday, I got more comfortable with GitHub due to my vac work at a web development company. I became accustomed to publishing pages, creating repositories and setting up and index.html file. I did not struggle as much as I did last year, because I was pushed into an environment that required me to either know how to use GitHub or be left behind. I definitely see the use of GitHub a lot more than I did before.
 
@@ -30,6 +24,4 @@ I think it really says a lot how these different platforms provided what felt li
 
 <article>Goals for this Course</article>
 
-I really enjoyed my web development vac work, and although I know I wasn't working on anything truly important in the grand scheme of things, I hope to do so in the future. Even if it just means making BuzzFeed styled personality quizzes. I also hope to expand my knowledge on digital ethics and how to navigate the world with AI
-</body>
-</html>
+I really enjoyed my web development vac work, and although I know I wasn't working on anything truly important in the grand scheme of things, I hope to do so in the future. Even if it just means making BuzzFeed styled personality quizzes. I also hope to expand my knowledge on digital ethics and how to navigate the world with AI */}
