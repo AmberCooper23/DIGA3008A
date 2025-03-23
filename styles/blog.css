@@ -1,7 +1,16 @@
+:root {
+--color1: #3f2a53;
+--color2: #75619d;
+--color3: #beaedb;
+--color4: #e6eff8;
+--textColours: #000000;
+
+}
+
 body {
   font-family: "Arial", sans-serif;
   background-color: #f9f9f9;
-  color: #000000;
+  color: var(--textColours);
   margin: 0;
   padding: 0;
 }
@@ -11,15 +20,20 @@ body {
   justify-content: space-between;
   padding: 15px 30px;
   font-weight: bolder;
-  background-color: #726ca0;
+  background-color: var(--color2);
   font-size: larger;
-  color: #f9f9f9;
+  color: ;
+}
+
+.h-entry h1 {
+color: var(--color1);
 }
 
 .summary {
   align-items: center;
   font-style: italic;
 }
+
 .quote {
   align-items: center;
   font-weight: bold;
@@ -50,7 +64,7 @@ body {
 .postTitle {
   font-size: large;
   margin-bottom: 10px;
-  background-color: #bcb8dd;
+  background-color: var(--color3);
 }
 
 .paragraphs {
@@ -58,5 +72,11 @@ body {
 }
 
 .returnButton {
-  color: #f9f9f9;
+  color: var(--color4);
+}
+
+.footer {
+  position: fixed;
+  background-color: var(--color1);
+  color: var(--color4);
 }
