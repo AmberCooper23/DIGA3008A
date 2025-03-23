@@ -56,3 +56,7 @@ body {
 .paragraphs {
   font-size: 16px;
 }
+
+.returnButton {
+  color: #f9f9f9;
+}
