@@ -22,7 +22,7 @@ body {
   font-weight: bolder;
   background-color: var(--color2);
   font-size: larger;
-  color: ;
+  
 }
 
 .h-entry h1 {
@@ -79,4 +79,9 @@ color: var(--color1);
   position: fixed;
   background-color: var(--color1);
   color: var(--color4);
+}
+
+.u-url {
+  color: var(--color3);
+  font-style: italic;
 }
