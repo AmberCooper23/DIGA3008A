@@ -46,7 +46,7 @@ color: var(--color1);
   padding: 30px;
   max-width: fit-content;
   margin: auto;
-  background-color: #e6eff8;
+  background-color: var(--color4);
 }
 
 .post {
