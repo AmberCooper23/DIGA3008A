@@ -86,3 +86,7 @@ footer {
   color: var(--color3);
   font-style: italic;
 }
+
+.navBar a{
+  color: var(--textColours);
+}
