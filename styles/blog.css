@@ -23,14 +23,6 @@ body {
   font-size: larger;
 }
 
-.navBar {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
-  font-weight: bolder;
-  background-color: var(--color2);
-  font-size: larger;
-}
 .h-entry h1 {
   color: var(--color1);
 }
