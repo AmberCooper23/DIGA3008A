@@ -14,9 +14,6 @@ body {
   padding: 0;
 }
 
-.body:hover{
-  color: var(--color1);
-}
 .header {
   display: flex;
   justify-content: space-between;
@@ -89,7 +86,7 @@ footer {
 }
 
 .nav-u-url{
-  color: var(--textColours);
+  color: var(--color4);
 }
 
 .navLinks ul{
@@ -99,4 +96,8 @@ footer {
   margin: 0;
   display: flex;
   gap: 20px; 
+}
+
+.navLinks li:hover{
+  color: var(--textColours);
 }
