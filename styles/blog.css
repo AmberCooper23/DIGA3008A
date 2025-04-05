@@ -14,6 +14,9 @@ body {
   padding: 0;
 }
 
+.body:hover{
+  color: var(--color1);
+}
 .header {
   display: flex;
   justify-content: space-between;
