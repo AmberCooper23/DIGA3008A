@@ -89,6 +89,10 @@ footer {
   color: var(--textColours);
 }
 
-ul {
+.navLinks {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; 
 }
