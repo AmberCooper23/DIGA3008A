@@ -98,6 +98,6 @@ footer {
   gap: 20px; 
 }
 
-.navLinks ul li a:hover{
+.nav-u-url a:hover{
   color: var(--textColours);
 }
