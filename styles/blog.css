@@ -6,8 +6,6 @@
   --textColours: #000000;
 }
 
-
-
 body {
   font-family: "Arial", sans-serif;
   background-color: #f9f9f9;
@@ -25,6 +23,14 @@ body {
   font-size: larger;
 }
 
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  font-weight: bolder;
+  background-color: var(--color2);
+  font-size: larger;
+}
 .h-entry h1 {
   color: var(--color1);
 }
