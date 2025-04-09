@@ -19,8 +19,8 @@ body {
   justify-content: space-between;
   padding: 15px 30px;
   font-weight: bolder;
-  background-color: var(--color2);
-  font-size: larger;
+  background-color: var(--color4);
+  font-size: x-large;
 }
 
 .h-entry h1 {
@@ -44,11 +44,11 @@ body {
   padding: 30px;
   max-width: fit-content;
   margin: auto;
-  background-color: var(--color3);
+  background-color: var(--color4);
 }
 
 .h-entry {
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   background: #fff;
@@ -75,9 +75,16 @@ body {
 }
 
 footer {
+  display: flex;
   background-color: var(--color1);
   color: var(--color4);
   align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.copyright {
+  font-size: small;
 }
 
 .u-url {
@@ -86,18 +93,34 @@ footer {
 }
 
 .nav-u-url{
-  color: var(--color4);
+  color: var(--color1);
+  font-size: medium;
 }
 
 .navLinks ul{
-  display: flex;
+  display: flexb;
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   gap: 20px; 
+  top: 2px;
+  text-transform:uppercase;
 }
 
-.nav-u-url a:hover{
+.navLinks ul li a:hover{
   color: var(--textColours);
+  font-size: large;
+}
+
+.navLinks ul li a .active{
+  color: var(--textColours);
+}
+
+.nav-u-url a:active{
+  color: #000000;
+}
+
+@media screen {
+  
 }
