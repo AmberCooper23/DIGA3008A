@@ -61,15 +61,14 @@
     color: #000000;
   }
 
-  .imgGrid {
+  .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: 200px;
-    list-style: none;
     gap: 1rem;
   }
   
-  .imgGrid img {
+  .image-grid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
