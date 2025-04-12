@@ -8,7 +8,7 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f9f9f9;
+  background-color: var(--color4);
   color: var(--textColours);
   margin: 0;
   padding: 0;
@@ -98,11 +98,10 @@ footer {
 }
 
 .navLinks ul{
-  display: flexb;
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
   gap: 20px; 
   top: 2px;
   text-transform:uppercase;
