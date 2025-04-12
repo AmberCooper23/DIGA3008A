@@ -32,3 +32,45 @@
   main {
     flex: 1;
   }
+
+  .nav-u-url{
+    color: var(--color1);
+    font-size: medium;
+  }
+  
+  .navLinks ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; 
+    top: 2px;
+    text-transform:uppercase;
+  }
+  
+  .navLinks ul li a:hover{
+    color: var(--textColours);
+    font-size: large;
+  }
+  
+  .navLinks ul li a .active{
+    color: var(--textColours);
+  }
+  
+  .nav-u-url a:active{
+    color: #000000;
+  }
+
+  footer {
+    display: flex;
+    background-color: var(--color1);
+    color: var(--color4);
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+  }
+  
+  .copyright {
+    font-size: small;
+  }
+  
