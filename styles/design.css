@@ -61,6 +61,20 @@ main {
   color: #000000;
 }
 
+.designContainer {
+  gap: 20px;
+  padding: 30px;
+  max-width: fit-content;
+  margin: auto;
+  background-color: var(--color4);
+}
+
+.designTitle {
+  font-size: large;
+  margin-bottom: 10px;
+  background-color: var(--color3);
+}
+
 footer {
   display: flex;
   background-color: var(--color1);
