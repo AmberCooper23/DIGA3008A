@@ -6,14 +6,20 @@
   --textColours: #000000;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: "Arial", sans-serif;
   background-color: var(--color4);
   color: var(--textColours);
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -21,6 +27,10 @@ body {
   font-weight: bolder;
   background-color: var(--color4);
   font-size: x-large;
+}
+
+main {
+  flex: 1;
 }
 
 .h-entry h1 {
