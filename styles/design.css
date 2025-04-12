@@ -82,6 +82,10 @@ main {
   background: #fff;
 }
 
+.paragraphs {
+  font-size: 16px;
+}
+
 footer {
   display: flex;
   background-color: var(--color1);
