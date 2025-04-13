@@ -33,6 +33,10 @@
     flex: 1;
   }
 
+  .u-photo {
+    max-width: 250px;
+}
+
 /* NAV BAR LIST */
 .nav-u-url{
   color: var(--color1);
