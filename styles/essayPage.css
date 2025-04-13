@@ -33,6 +33,7 @@ main {
   flex: 1;
 }
 
+/* NAV BAR LIST */
 .nav-u-url{
   color: var(--color1);
   font-size: medium;
@@ -45,7 +46,7 @@ main {
   margin: 0;
   gap: 20px; 
   top: 2px;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
 .navLinks ul li a:hover{
@@ -54,11 +55,30 @@ main {
 }
 
 .navLinks ul li a .active{
+  color: var(--color4);
+}
+ /* NAV BAR BUTTONS */
+
+.navLinks button{
+  background: var(--color4);
   color: var(--textColours);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: large;
+  text-transform:uppercase;
 }
 
-.nav-u-url a:active{
-  color: #000000;
+.navLinks button:hover{
+  color: var(--color4);
+  background-color: var(--color2);
+  font-weight: 400;
+}
+
+.navLinks button.active {
+  color: var(--color4);
+  background-color: var(--color2);
+  font-weight: bold;
 }
 
 footer {

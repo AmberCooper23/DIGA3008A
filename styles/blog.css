@@ -64,7 +64,7 @@ main {
   background: #fff;
 }
 
-.image {
+.u-photo {
   width: 500px;
   height: 400px;
   border-radius: 10px;
@@ -102,6 +102,7 @@ footer {
   font-style: italic;
 }
 
+/* NAV BAR LIST */
 .nav-u-url{
   color: var(--color1);
   font-size: medium;
@@ -123,9 +124,43 @@ footer {
 }
 
 .navLinks ul li a .active{
+  color: var(--color4);
+}
+ /* NAV BAR BUTTONS */
+
+.navLinks button{
+  background: var(--color4);
   color: var(--textColours);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: large;
+  text-transform:uppercase;
 }
 
-.nav-u-url a:active{
-  color: #000000;
+.navLinks button:hover{
+  color: var(--color4);
+  background-color: var(--color2);
+  font-weight: 400;
+}
+
+.navLinks button.active {
+  color: var(--color4);
+  background-color: var(--color2);
+  font-weight: bold;
+}
+
+/* RESPONSIVE STUFF */
+
+@media (max-width: 1024px) {
+  .navLinks {
+    width: 90%; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .navLinks {
+    width: 95%; 
+  }
 }
