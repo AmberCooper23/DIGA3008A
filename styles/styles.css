@@ -82,7 +82,7 @@ a
 
 .profile
 {
-    grid-column: 1 / -1; /*the profile takes both columns*/
+    grid-column: 1 / -1; 
     margin-bottom: 2rem;
 }
 
