@@ -91,35 +91,56 @@ main {
 }
 
 .thumbnail {
-  width: 30%;
+  width: 60%;
 }
 
-.profile {
+/* .profile {
   grid-column: 1 / -1;
-}
+} */
 .profileContainer {
   display: flex;
-  gap: 2rem;
-  max-width: fit-content;
+    /* gap: 2rem; */
+  /* max-width: fit-content; */
   margin: auto;
 }
 .profileProfileImg {
-  width: 100%;
+  width: 50%;
   border-radius: 100%;
 }
 
+.me {
+  max-width: 60%;
+}
+
+.description {
+  max-width: 40%;
+}
 .title {
   font-size: large;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .latestBlog {
   background-color: var(--color3);
 }
-.description {
-  font-size: large;
-  font-weight: 400;
-  color: var(--textColours);
+
+.featuredContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.featuredSection {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 43%;
 }
 
 .container {
@@ -139,7 +160,7 @@ main {
 }
 
 .profile u-photo {
-  width: 200px;
+  width: 150px;
   height: auto;
   border-radius: 10px;
 }
