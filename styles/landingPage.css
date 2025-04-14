@@ -244,6 +244,18 @@ footer {
   .featuredSection {
     width: 90%;
   }
+
+  .container {
+    padding: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container > * {
+    width: 100%;
+    max-width: 100%;
+  } 
 }
 
 .thumbnail {
