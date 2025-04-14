@@ -194,4 +194,20 @@ nav ul{
 flex-direction: column;
 align-items: center;
 }
+
+article.profileProfileImg {
+  width: 300px;
+  height: 300px;
+  max-width: none;
+}
+
+article.profileProfileImg img.u-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.profileContainer {
+  flex-direction: column;
+}
 }
