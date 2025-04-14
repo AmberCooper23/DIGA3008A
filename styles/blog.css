@@ -66,9 +66,13 @@ main {
 }
 
 .u-photo {
-  width: 500px;
-  height: 400px;
+  width: 60%;
+  height: auto;
   border-radius: 10px;
+}
+
+.figure {
+  max-width: 500px;
 }
 
 .postTitle {
