@@ -144,9 +144,11 @@ main {
 }
 
 .container {
-  gap: 20px;
+  display: grid; /* add this */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
   padding: 30px;
-  max-width: fit-content;
+  max-width: 1200px;
   margin: auto;
   background-color: var(--color4);
 }
