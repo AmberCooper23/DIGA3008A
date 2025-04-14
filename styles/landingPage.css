@@ -256,6 +256,10 @@ footer {
     width: 100%;
     max-width: 100%;
   } 
+
+  body {
+    background-color: pink !important;
+  }
 }
 
 .thumbnail {
