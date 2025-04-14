@@ -157,14 +157,77 @@ footer {
 
 /* RESPONSIVE STUFF */
 
-@media (max-width: 1024px) {
-  .navLinks {
-    width: 90%;
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    font-size: large;
+  }
+
+  .navLinks ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .blogContainer {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .u-photo {
+    width: 100%;
+  }
+
+  .figure {
+    max-width: 100%;
+  }
+
+  .postTitle {
+    font-size: medium;
+  }
+
+  .paragraphs {
+    font-size: 14px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .navLinks button {
+    font-size: medium;
+    padding: 8px 12px;
+  }
+
+  .quote {
+    font-size: medium;
+    text-align: center;
+  }
+
+  .summary {
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
-  .navLinks {
-    width: 95%;
+  .header {
+    font-size: medium;
+  }
+
+  .navLinks ul {
+    gap: 8px;
+  }
+
+  .postTitle {
+    font-size: small;
+  }
+
+  .paragraphs {
+    font-size: 13px;
   }
 }
+

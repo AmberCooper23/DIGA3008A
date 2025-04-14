@@ -117,3 +117,74 @@ display: flex;
   height: auto;
   border-radius: 10px;
 }
+
+.h-feed {
+  gap: 20px;
+  padding: 30px;
+  max-width: fit-content;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: large;
+    padding: 15px;
+  }
+
+  .navLinks ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navLinks button {
+    width: 100%;
+    padding: 10px;
+    font-size: medium;
+  }
+
+  .designContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .designCard,
+  .thumbnail {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .h-feed {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: medium;
+  }
+
+  .nav-u-url {
+    font-size: small;
+  }
+
+  .navLinks button {
+    font-size: small;
+    padding: 8px;
+  }
+
+  .copyright {
+    font-size: x-small;
+  }
+}

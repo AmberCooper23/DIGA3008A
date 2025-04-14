@@ -125,3 +125,73 @@ footer {
 .copyright {
   font-size: small;
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: large;
+    padding: 15px;
+  }
+
+  .navLinks ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navLinks button {
+    font-size: medium;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .designContainer {
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .u-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .paragraphs {
+    font-size: 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: medium;
+  }
+
+  .nav-u-url {
+    font-size: small;
+  }
+
+  .navLinks button {
+    font-size: small;
+    padding: 8px;
+  }
+
+  .designTitle {
+    font-size: medium;
+  }
+
+  .paragraphs {
+    font-size: 14px;
+  }
+
+  .copyright {
+    font-size: x-small;
+  }
+}
+

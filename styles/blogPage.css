@@ -117,3 +117,70 @@ display: flex;
   height: auto;
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: large;
+    padding: 15px;
+  }
+
+  .navLinks ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navLinks button {
+    font-size: medium;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .blogContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .blogCard {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: medium;
+  }
+
+  .navLinks ul {
+    gap: 8px;
+  }
+
+  .nav-u-url {
+    font-size: small;
+  }
+
+  .navLinks button {
+    font-size: small;
+    padding: 8px;
+  }
+
+  .blogCard {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .copyright {
+    font-size: x-small;
+  }
+}
+  

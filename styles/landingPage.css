@@ -207,3 +207,106 @@ footer {
     width: 150px;
   }
 }
+
+.thumbnail {
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    font-size: large;
+  }
+
+  .navLinks ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+  }
+
+  .navLinks button {
+    width: 100%;
+    font-size: medium;
+    text-align: left;
+  }
+
+  .profileContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .profileProfileImg {
+    width: 80%;
+  }
+
+  .me,
+  .description {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .featuredContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featuredSection {
+    width: 100%;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .aboutText h2 {
+    font-size: large;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .copyright {
+    font-size: x-small;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: medium;
+    padding: 10px;
+  }
+
+  .nav-u-url {
+    font-size: small;
+  }
+
+  .navLinks button {
+    font-size: small;
+    padding: 8px;
+  }
+
+  .profileProfileImg {
+    width: 90%;
+  }
+
+  .me,
+  .description {
+    font-size: small;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: medium;
+  }
+
+  .featuredContainer {
+    padding: 1rem;
+  }
+}
