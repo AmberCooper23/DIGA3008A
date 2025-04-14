@@ -6,8 +6,7 @@
   --textColours: #000000;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
 }
@@ -21,9 +20,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 30px;
   font-weight: bolder;
   background-color: var(--color4);
@@ -46,7 +47,6 @@ main {
   padding: 0;
   margin: 0;
   gap: 20px;
-  top: 2px;
   text-transform: uppercase;
 }
 
@@ -55,11 +55,11 @@ main {
   font-size: large;
 }
 
-.navLinks ul li a .active {
+.navLinks ul li a.active {
   color: var(--color4);
 }
-/* NAV BAR BUTTONS */
 
+/* NAV BAR BUTTONS */
 .navLinks button {
   background: var(--color4);
   color: var(--textColours);
@@ -82,27 +82,19 @@ main {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 768px) {
-  .container {
-    width: 100%;
-    grid-template-columns: 1fr;
-    gap: 7rem;
-  }
-}
-
 .thumbnail {
   width: 60%;
+  border-radius: 12px;
 }
 
-/* .profile {
-  grid-column: 1 / -1;
-} */
 .profileContainer {
   display: flex;
-    /* gap: 2rem; */
-  /* max-width: fit-content; */
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
   margin: auto;
 }
+
 .profileProfileImg {
   width: 50%;
   border-radius: 100%;
@@ -115,6 +107,7 @@ main {
 .description {
   max-width: 40%;
 }
+
 .title {
   font-size: large;
   margin-bottom: 10px;
@@ -127,12 +120,12 @@ main {
 
 .featuredContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 2rem;
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 .featuredSection {
@@ -140,13 +133,13 @@ main {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  width: 43%;
+  width: 48%;
 }
 
 .container {
-  display: grid; /* add this */
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 20px;
   padding: 30px;
   max-width: 1200px;
   margin: auto;
@@ -194,25 +187,9 @@ footer {
   font-size: small;
 }
 
-@media (max-width: 768px) {
-  .navBar {
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 8px;
-  }
-
-  .profile {
-    padding: 16px;
-  }
-
-  .profile u-photo {
-    width: 150px;
-  }
-}
-
-.thumbnail {
-  border-radius: 12px;
-}
+/* ======================
+   RESPONSIVE MEDIA QUERIES
+   ====================== */
 
 @media (max-width: 768px) {
   .header {
@@ -220,6 +197,12 @@ footer {
     align-items: flex-start;
     padding: 15px;
     font-size: large;
+  }
+
+  .navBar {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
   }
 
   .navLinks ul {
@@ -232,6 +215,7 @@ footer {
     width: 100%;
     font-size: medium;
     text-align: left;
+    display: block;
   }
 
   .profileContainer {
@@ -240,13 +224,11 @@ footer {
     gap: 1rem;
   }
 
-  .profileProfileImg {
-    width: 80%;
-  }
-
+  .profileProfileImg,
   .me,
   .description {
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
     text-align: center;
   }
 
@@ -261,6 +243,7 @@ footer {
 
   .container {
     padding: 20px;
+    grid-template-columns: 1fr;
   }
 
   .aboutText h2 {
