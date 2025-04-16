@@ -100,7 +100,7 @@ footer {
 }
 
 .blogContainer {
-display: flex;
+  display: flex;
 }
 
 .blogCard {
@@ -183,4 +183,3 @@ display: flex;
     font-size: x-small;
   }
 }
-  
