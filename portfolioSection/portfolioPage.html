@@ -90,55 +90,104 @@
           </section>
         </section>
       </section>
-      <section class="myWork">
-        <h2 class="title">My Work</h2>
-        <div class="carousel">
-          <button class="carousel-button prev"> prev </button>
-          <button class="carousel-button next"> next </button>
-        <ul class="image-grid">
-          <li class="slide" data-active >
-            <a
-              class="u-url, u-photo"
-              href="https://www.behance.net/gallery/156908383/Art-Surrounding-Nature"
-            >
-              Art Surrounded by Nature
-              <img src="../images/pf1.png" alt="Behance Portfolio" />
-            </a>
-          </li>
-          <li class="slide">
-            <a
-              class="u-url, u-photo"
-              href="https://open.substack.com/pub/saintluvs2stack/p/hunger-pains?r=5dgcxd&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false"
-            >
-              Hunger Pains <img src="../images/pf2.jpeg" alt="Substack Post" />
-            </a>
-          </li>
-          <li class="slide">
-            <a
-              class="u-url, u-photo"
-              href="https://acooper23.itch.io/geometrical-gravity"
-            >
-              Geometrical Gravity Game
-              <img src="../images/pf3.png" alt="itch.io post" />
-            </a>
-          </li>
-          <li class="slide">
-            <a class="u-url, u-photo">
-              Blender Cabinet Sculpture
-              <img src="../images/pf4.png" alt="blender cabinet Sculpture" />
-            </a>
-          </li>
-          <li class="slide">
-            <a class="u-url, u-photo">
-              Blender Ladder Sculpture
-              <img src="../images/pf5.png" alt="blender ladder Sculpture" />
-            </a>
-          </li>
-        </ul>
-        </div>
+      <section class="gallery">
+        <aside class="leftColumn" id="artWheel">
+          <div class="leftColumnInner">
+            <figure class="leftColumnImg">
+              <img src="../images/myWork/benchArt.png" alt="Bench Art" />
+            </figure>
+          <figure class="leftColumnImg">
+            <img src="../images/myWork/bootsArt.png" alt="Boots Art" />
+          </figure> 
+          <figure class="leftColumnImg">
+            <img src="../images/myWork/cigArt.png" alt="Cig Art" />
+          </figure>
+          <figure class="leftColumnImg">
+            <img src="../images/myWork/flagArt.png" alt="Flag Art" />
+          </figure>
+          <figure class="leftColumnImg">
+            <img src="../images/myWork/ladyArt.png" alt="Lady Art" />
+          </figure>
+          <figure class="leftColumnImg">
+            <img src="../images/myWork/lighterArt.png" alt="Lighter Art" />
+          </figure>
+          <figure class="leftColumnImg">
+            <img src="../images/myWork/manArt.png" alt="Man Art" />
+          </figure> 
+          <figure class="leftColumnImg">
+            <img src="../images/myWork/matchArt.png" alt="Match Art" />
+          </figure>
+          <figure class="leftColumnImg">
+            <img src="../images/myWork/plagueArt.png" alt="Plague Art" />
+          </figure>
+          <figure class="leftColumnImg">
+            <img src="../images/myWork/planeArt.png" alt="Plane Art" />
+          </figure>
+          <figure class="leftColumnImg">
+            <img src="../images/myWork/pollutionArt.png" alt="Pollution Art" />
+          </figure>
+          </div>
+        </aside>
+
+       <section class="centerGrid">
+        <figure class="centerGridImg">
+          <img src="../images/myWork/bootsArt.png" alt="Boots Art" />
+          <figcaption> Heavy Steps - Black boots and poised tension. </figcaption>
+        </figure>
+        <figure class="centerGridImg">
+          <img src="../images/myWork/cigArt.png" alt="Cig Art" />
+          <figcaption> Vicebox</figcaption>
+        </figure>
+        <figure class="centerGridImg">
+          <img src="../images/myWork/ladyArt.png" alt="Lady Art" />
+          <figcaption> Daughter of the Rift </figcaption>
+        </figure>
+        <figure class="centerGridImg">
+          <img src="../images/myWork/lighterArt.png" alt="Lighter Art" />
+          <figcaption> Still life of a lighter </figcaption>
+        </figure>
+        <figure class="centerGridImg">
+          <img src="../images/myWork/manArt.png" alt="Man Art" />
+          <figcaption> A man reaching out for help in war. </figcaption>
+        </figure>
+        <figure class="centerGridImg">
+          <img src="../images/myWork/matchArt.png" alt="Match Art" />
+          <figcaption> Friction - The burden of the match stick </figcaption>
+        </figure>
+        <figure class="centerGridImg">
+          <img src="../images/myWork/plagueArt.png" alt="Plague Art" />
+          <figcaption> The Plague Doctor </figcaption>
+        </figure>
+        <figure class="centerGridImg">
+          <img src="../images/myWork/planeArt.png" alt="Plane Art" />
+          <figcaption> Ghost of War </figcaption>
+        </figure>
+        <figure class="centerGridImg">
+          <img src="../images/myWork/pollutionArt.png" alt="Pollution Art" />
+          <figcaption> Burning the Planet </figcaption>
+        </figure>
+       
+       </section>
+        
+       <section class="galleryInfo">
+          <h2 class="galleryTitle">My Art Gallery</h2>
+          <p class="galleryDescription">
+            Welcome to my gallery. I have created a collection of my digital artwork from the past 5 years. I really enjoy drawing everyday things, as well as visual commentary on socio-political issues. I am more of a painter than a drawer, so I'm especially proud of the digital "oil" work I did. I hope you enjoy looking at my art, because I enjoyed making it.
+          </p>
+        </section>
       </section>
+      <!-- Lightbox Overlay -->
+      <div id="lightbox-overlay" style="display:none;">
+        <div class="lightbox-content">
+          <img id="lightbox-img" src="" alt="Enlarged artwork" />
+          <button id="lightbox-close" aria-label="Close lightbox">&times;</button>
+        </div>
+      </div>
         <script src="../scripts/gen.js"></script>
+        <script src="../scripts/artWheel.js"></script>
+        <script src="../scripts/portfolioLightbox.js"></script>
         <button id="toTopBtn">↑</button>
+        
     </main>
     <footer>
       <p class="footerText">
