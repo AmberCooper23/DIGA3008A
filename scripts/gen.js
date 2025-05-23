@@ -1,3 +1,4 @@
+window.addEventListener("DOMContentLoaded", () => {
 const toTopBtn = document.getElementById("toTopBtn");
 const modeToggle = document.getElementById("modeToggle");
 
@@ -34,3 +35,4 @@ if (modeToggle) {
     }
   });
 }
+});

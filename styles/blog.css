@@ -3,9 +3,12 @@
   --color2: #75619d;
   --color3: #beaedb;
   --color4: #e6eff8;
+  --headerBackground: #e6eff8;
   --textColours: #000000;
+  --footerBackground: #3f2a53;
+  --footerText: #e6eff8;
+  --containerBackground: #e6eff8;
 }
-
 html,
 body {
   height: 100%;
@@ -21,14 +24,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
-  font-weight: bolder;
-  background-color: var(--color4);
-  font-size: x-large;
-}
+
 
 main {
   flex: 1;
@@ -55,7 +51,7 @@ main {
   padding: 30px;
   max-width: fit-content;
   margin: auto;
-  background-color: var(--color4);
+  background-color: var(--containerBackground);
   box-shadow: #000000;
 }
 
