@@ -3,36 +3,14 @@ a {
   color: var(--color1);
 }
 
-img {
-  width: 100%;
-  display: block;
-}
+
 
 /* === MAIN SECTION === */
 main {
   flex: 1;
 }
 
-/* === IMAGE GRID === */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
-.image-grid li {
-  width: 100%;
-  height: 200px;
-}
-
-.image-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 /* === PROFILE SECTION === */
 .profileContainer {
@@ -70,49 +48,12 @@ main {
 
 /* === CONTAINERS & LAYOUT === */
 .container {
-  display: grid;
+  display: flex;
   gap: 20px;
   padding: 30px;
   max-width: fit-content;
-  margin: auto;
   background-color: var(--color4);
 }
-
-
-
-/* .carousel {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-
-.slide {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-}
-
-.slide > img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.slide[data-active] {
-  opacity: 1;
-}
-
-.carousel-button {
-  position: absolute;
-  background: none;
-  border: none;
-  font-size: 4rem;
-  top: 50%;
-  z-index: 2;
-  transform: translateY(-50%);
-} */
 
 /* === TEXT ELEMENTS === */
 .description {
@@ -139,20 +80,6 @@ main {
   color: var(--color2);
 }
 
-/* === FOOTER === */
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color1);
-  color: var(--color4);
-  padding: 15px 30px;
-}
-
-.copyright {
-  font-size: small;
-}
-
 /* === RESPONSIVE DESIGN === */
 @media only screen and (max-width: 768px) {
   .container {
@@ -172,6 +99,7 @@ footer {
   }
 }
 
+/* My Work */
 .gallery {
   display: flex;
   margin-top: 2rem; /* Pushes the gallery down from the top */
