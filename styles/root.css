@@ -142,6 +142,30 @@ body.dark-mode .blogContainer {
   font-weight: bolder;
   background-color: var(--headerBackground);
   font-size: x-large;
+  position: fixed;
+  width: 98%;
+  top: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--color4);
+  color: var(--textColours);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 /* Footer */
