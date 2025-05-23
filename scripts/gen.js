@@ -1,3 +1,9 @@
+const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+    if (modeToggle) modeToggle.checked = true;
+  };
+
 window.addEventListener("DOMContentLoaded", () => {
 const toTopBtn = document.getElementById("toTopBtn");
 const modeToggle = document.getElementById("modeToggle");
@@ -16,13 +22,7 @@ if (toTopBtn) {
     };
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    document.body.classList.add("dark-mode");
-    if (modeToggle) modeToggle.checked = true;
-  }
-});
+
 
 if (modeToggle) {
   modeToggle.addEventListener("change", function () {
