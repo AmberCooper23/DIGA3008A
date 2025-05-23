@@ -3,7 +3,10 @@
   --color2: #75619d;
   --color3: #beaedb;
   --color4: #e6eff8;
+  --headerBackground: #e6eff8;
   --textColours: #000000;
+  --footerBackground: #3f2a53;
+  --footerText: #e6eff8;
 }
 
 /* Dark Mode */
@@ -65,3 +68,52 @@ body.dark-mode {
   left: 33px;
   background: var(--color1);
 }
+
+/* Nav Bar */
+.nav-u-url {
+  color: var(--color1);
+  font-size: medium;
+}
+
+.navLinks ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  top: 2px;
+  text-transform: uppercase;
+}
+
+.navLinks ul li a:hover {
+  color: var(--textColours);
+  font-size: large;
+}
+
+.navLinks ul li a .active {
+  color: var(--color4);
+}
+/* NAV BAR BUTTONS */
+
+.navLinks button {
+  background: var(--headerBackground);
+  color: var(--textColours);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+.navLinks button:hover {
+  color: var(--color4);
+  background-color: var(--color2);
+  font-weight: 400;
+}
+
+.navLinks button.active {
+  color: var(--color4);
+  background-color: var(--color2);
+  font-weight: bold;
+}
+
