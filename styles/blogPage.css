@@ -215,6 +215,7 @@ footer {
   background: var(--color3);
   border-radius: 25px;
   position: relative;
+  transition: background 0.5s;
 }
 
 .slider::before {
@@ -222,10 +223,11 @@ footer {
   position: absolute;
   top: 3px;
   left: 3px;
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background: var(--color2);
+  transition: left 0.5s, background 0.5s;
 }
 
 .toggleSwitch input:checked + .slider {
