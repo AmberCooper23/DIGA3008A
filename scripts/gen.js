@@ -1,4 +1,5 @@
 const toTopBtn = document.getElementById("toTopBtn");
+const modeToggle = document.getElementById("modeToggle");
 
 window.onscroll = function () {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -11,3 +12,23 @@ window.onscroll = function () {
 toTopBtn.onclick = function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+window.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.body.classList.add("darkMode");
+        modeToggle.checked = true;
+    }
+});
+
+if (modeToggle) {
+modeToggle/addEventListener("change", function () {
+    if (this.checked) {
+        document.body.classList.add("darkMode");
+        localStorage.setItem("theme", "dark");
+    } else {
+        document.body.classList.remove("darkMode");
+        localStorage.setItem("theme", "light");
+    }
+});
+}
