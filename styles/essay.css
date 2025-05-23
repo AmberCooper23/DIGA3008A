@@ -1,96 +1,79 @@
-:root {
-  --color1: #3f2a53;
-  --color2: #75619d;
-  --color3: #beaedb;
-  --color4: #e6eff8;
-  --textColours: #000000;
-}
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
 
-body {
-  font-family: "Arial", sans-serif;
-  background-color: var(--color4);
-  color: var(--textColours);
-  margin: 0;
-  padding: 0;
+.blogContainer {
   display: flex;
-  flex-direction: column;
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
-  font-weight: bolder;
-  background-color: var(--color4);
-  font-size: x-large;
 }
 
-main {
-  flex: 1;
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-/* NAV BAR LIST */
-.nav-u-url {
-  color: var(--color1);
-  font-size: medium;
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: large;
+    padding: 15px;
+  }
+
+  .navLinks ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navLinks button {
+    font-size: medium;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .blogContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .blogCard {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+  }
 }
 
-.navLinks ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  gap: 20px;
-  top: 2px;
-  text-transform: uppercase;
+@media (max-width: 480px) {
+  .header {
+    font-size: medium;
+  }
+
+  .navLinks ul {
+    gap: 8px;
+  }
+
+  .nav-u-url {
+    font-size: small;
+  }
+
+  .navLinks button {
+    font-size: small;
+    padding: 8px;
+  }
+
+
+  .copyright {
+    font-size: x-small;
+  }
 }
 
-.navLinks ul li a:hover {
-  color: var(--textColours);
-  font-size: large;
-}
 
-.navLinks ul li a .active {
-  color: var(--color4);
-}
-/* NAV BAR BUTTONS */
 
-.navLinks button {
-  background: var(--color4);
-  color: var(--textColours);
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: large;
-  text-transform: uppercase;
-}
 
-.navLinks button:hover {
-  color: var(--color4);
-  background-color: var(--color2);
-  font-weight: 400;
-}
 
-.navLinks button.active {
-  color: var(--color4);
-  background-color: var(--color2);
-  font-weight: bold;
-}
-
-footer {
-  display: flex;
-  background-color: var(--color1);
-  color: var(--color4);
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 30px;
-}
-
-.copyright {
-  font-size: small;
-}
