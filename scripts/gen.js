@@ -1,25 +1,21 @@
 const toTopBtn = document.getElementById("toTopBtn");
 const modeToggle = document.getElementById("modeToggle");
 
-window.onscroll = function () {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        toTopBtn.style.display = "block";
-    } else {
-        toTopBtn.style.display = "none";
-    }
+if (toTopBtn) {
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            toTopBtn.style.display = "block";
+        }
+        else {
+            toTopBtn.style.display = "none";
+        }
 };
 
 toTopBtn.onclick = function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({top: 0, behavior: "smooth"});
 };
 
-window.addEventListener("DOMContentLoaded", () => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-        document.body.classList.add("darkMode");
-        modeToggle.checked = true;
-    }
-});
+}
 
 if (modeToggle) {
 modeToggle/addEventListener("change", function () {
