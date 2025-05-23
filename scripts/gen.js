@@ -17,6 +17,17 @@ toTopBtn.onclick = function () {
 
 }
 
+window.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.body.classList.add("darkMode");
+        if (modeToggle) {
+            modeToggle.checked = true;
+        }
+
+    }
+})
+
 if (modeToggle) {
 modeToggle/addEventListener("change", function () {
     if (this.checked) {
