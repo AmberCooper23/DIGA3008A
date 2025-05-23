@@ -122,57 +122,6 @@ footer {
   border-radius: 10px;
 }
 
-/* Toggle Switch */
-.toggle-switch {
-  display: flex;
-  align-items: center;
-  width: auto;
-  margin-right: 10px;
-  margin-left: 10px;
-  cursor: pointer;
-  position: relative;
-  user-select: none;
-  float: none;
-  gap: 0.5rem;
-}
-
-.toggleText {
-  font-size: medium;
-  color: var(--textColours);
-  margin-right: 0.5rem;
-  font-weight: bold;
-}
-
-.toggle-switch input {
-  display: none;
-}
-.slider {
-  display: block;
-  width: 60px;
-  height: 30px;
-  background: var(--color3);
-  border-radius: 30px;
-  position: relative;
-  transition: background 0.5s;
-}
-.slider::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 24px;
-  height: 24px;
-  background: var(--color2);
-  border-radius: 50%;
-  transition: left 0.5s, background 0.5s;
-}
-.toggle-switch input:checked + .slider {
-  background: var(--color2);
-}
-.toggle-switch input:checked + .slider::before {
-  left: 33px;
-  background: var(--color1);
-}
 
 #toTopBtn {
   display: none; /* Hidden by default, shown by JS */
@@ -264,13 +213,7 @@ footer {
   }
 }
 
-body.dark-mode {
---color4: black;
---headerBackground: black;
---textColours: #f9f9f9;
-  background-color: var(--color4);
-  color: var(--textColours);
-}
+
 
 
 
