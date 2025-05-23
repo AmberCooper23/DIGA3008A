@@ -144,12 +144,7 @@ footer {
     font-size: medium;
   }
 
-  .designContainer {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .designCard,
+  .containerCard,
   .thumbnail {
     width: 90%;
     margin: 10px 0;

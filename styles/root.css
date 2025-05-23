@@ -8,7 +8,9 @@
   --footerBackground: #3f2a53;
   --footerText: #e6eff8;
   --containerBackground: #e6eff8;
+  --headingBackground: #beaedb;
   --arrow: #e6eff8;
+  --whiteBorder: #e6eff8;
 }
 
 /* Dark Mode */
@@ -18,6 +20,7 @@ body.dark-mode {
 --containerBackground: black;
 --textColours: #f9f9f9;
 --arrow: #e6eff8;
+--headingBackground: black;
   background-color: var(--color4);
   color: var(--textColours);
 }
@@ -147,6 +150,12 @@ body.dark-mode .blogContainer {
   top: 0;
 }
 
+.headingBackground {
+  background-color: var(--headingBackground);
+}
+
+
+/* Body */
 html,
 body {
   height: 100%;
@@ -166,6 +175,18 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+}
+
+/* Containers */
+
+.containerCard {
+  color: var(--textColours);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  margin: 15px;
+  border: var(--whiteBorder) solid 1px;
 }
 
 /* Footer */
