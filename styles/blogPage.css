@@ -191,6 +191,10 @@ footer {
   margin-right: 10px;
   margin-left: 10px;
   cursor: pointer;
+  position: relative;
+  user-select: none;
+  float: none;
+  gap: 5px;
 }
 
 .toggleText {
