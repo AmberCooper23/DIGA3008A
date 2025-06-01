@@ -3,16 +3,7 @@ a {
   color: var(--color1);
 }
 
-
-
-/* === MAIN SECTION === */
-main {
-  flex: 1;
-}
-
-
-
-/* === PROFILE SECTION === */
+/* PROFILE SECTION */
 .profileContainer {
   display: flex;
   gap: 2rem;
@@ -46,7 +37,7 @@ main {
   font-style: italic;
 }
 
-/* === CONTAINERS & LAYOUT === */
+/* CONTAINERS & LAYOUT */
 .container {
   display: flex;
   gap: 20px;
@@ -55,7 +46,7 @@ main {
   background-color: var(--color4);
 }
 
-/* === TEXT ELEMENTS === */
+/* TEXT ELEMENTS */
 .description {
   font-size: large;
   font-weight: 400;
@@ -80,7 +71,7 @@ main {
   color: var(--color2);
 }
 
-/* === RESPONSIVE DESIGN === */
+/* RESPONSIVE DESIGN */
 @media only screen and (max-width: 768px) {
   .container {
     width: 100%;
