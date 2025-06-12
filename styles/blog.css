@@ -5,61 +5,69 @@
 .summary {
   align-items: center;
   font-style: italic;
+  text-align: center;
 }
 
 .quote {
   align-items: center;
   font-weight: bold;
   font-style: italic;
-  font-size: large;
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  text-align: center;
+  margin: 1.5rem 0;
 }
 
 .blogContainer {
-  gap: 20px;
-  padding: 30px;
-  width: 70%;
+  gap: clamp(1rem, 2vw, 1.25rem);
+  padding: clamp(1rem, 3vw, 1.875rem);
+  width: min(90%, 70rem);
   max-width: fit-content;
-  align-self: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0 auto;
   background-color: var(--containerBackground);
-  box-shadow: #000000;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
 }
 
 .picText {
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .h-entry {
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: clamp(0.5rem, 1.5vw, 0.625rem);
+  border-radius: clamp(0.5rem, 1vw, 0.625rem);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
   background: #fff;
 }
 
 .u-photo {
-  width: 60%;
+  width: min(100%, 40rem);
   height: auto;
-  border-radius: 10px;
+  border-radius: clamp(0.5rem, 1vw, 0.625rem);
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
 .figure {
-  max-width: 250px;
+  max-width: min(100%, 15.625rem);
 }
 
 .postTitle {
-  font-size: large;
-  margin-bottom: 10px;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  margin-bottom: 0.75em;
   background-color: var(--color3);
+  padding: 0.5em;
 }
 
 .paragraphs {
-  font-size: 16px;
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  line-height: 1.6;
 }
 
 .returnButton {
   color: var(--color4);
+  padding: 0.5em 1em;
 }
 
 .u-url {
@@ -67,25 +75,24 @@
   font-style: italic;
 }
 
-
 /* RESPONSIVE STUFF */
-
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px;
-    font-size: large;
+    padding: clamp(0.75rem, 3vw, 1rem);
+    font-size: clamp(1rem, 4vw, 1.125rem);
   }
 
   .navLinks ul {
     flex-direction: column;
-    gap: 10px;
+    gap: clamp(0.5rem, 2vw, 0.75rem);
   }
 
   .blogContainer {
-    padding: 15px;
+    padding: clamp(0.75rem, 3vw, 1rem);
     width: 100%;
+    box-sizing: border-box;
   }
 
   .u-photo {
@@ -97,49 +104,48 @@
   }
 
   .postTitle {
-    font-size: medium;
+    font-size: clamp(0.9375rem, 3vw, 1rem);
   }
 
   .paragraphs {
-    font-size: 14px;
+    font-size: clamp(0.8125rem, 3vw, 0.875rem);
   }
 
   footer {
     flex-direction: column;
-    gap: 10px;
-    padding: 20px;
+    gap: clamp(0.5rem, 2vw, 0.75rem);
+    padding: clamp(1rem, 3vw, 1.25rem);
     text-align: center;
   }
 
   .navLinks button {
-    font-size: medium;
-    padding: 8px 12px;
+    font-size: clamp(0.875rem, 3vw, 1rem);
+    padding: clamp(0.5rem, 2vw, 0.75rem);
   }
 
-  .quote {
-    font-size: medium;
-    text-align: center;
-  }
-
-  .summary {
-    text-align: center;
+  .picText {
+    flex-direction: column;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .header {
-    font-size: medium;
+    font-size: clamp(0.875rem, 4vw, 1rem);
   }
 
   .navLinks ul {
-    gap: 8px;
+    gap: clamp(0.375rem, 2vw, 0.5rem);
   }
 
   .postTitle {
-    font-size: small;
+    font-size: clamp(0.8125rem, 3.5vw, 0.875rem);
   }
 
   .paragraphs {
-    font-size: 13px;
+    font-size: clamp(0.75rem, 3vw, 0.8125rem);
+  }
+
+  .quote {
+    font-size: clamp(0.9375rem, 4vw, 1rem);
   }
 }

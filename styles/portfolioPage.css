@@ -13,7 +13,7 @@ a {
 
 .profileProfileImg {
   width: 100%;
-  max-width: 250px;
+  max-width: 15.625rem; 
   border-radius: 100%;
 }
 
@@ -29,7 +29,7 @@ a {
 }
 
 .u-photo {
-  max-width: 250px;
+  max-width: 15.625rem; 
 }
 
 .u-url {
@@ -40,22 +40,22 @@ a {
 /* CONTAINERS & LAYOUT */
 .container {
   display: flex;
-  gap: 20px;
-  padding: 30px;
+  gap: 1.25rem; 
+  padding: 1.875rem; 
   max-width: fit-content;
   background-color: var(--color4);
 }
 
 /* TEXT ELEMENTS */
 .description {
-  font-size: large;
+  font-size: 1.125rem; 
   font-weight: 400;
   color: var(--textColours);
 }
 
 .title {
-  font-size: large;
-  margin-bottom: 10px;
+  font-size: 1.125rem; 
+  margin-bottom: 0.625rem; 
   background-color: var(--color3);
 }
 
@@ -72,7 +72,7 @@ a {
 }
 
 /* RESPONSIVE DESIGN */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48rem) { 
   .container {
     width: 100%;
     grid-template-columns: 1fr;
@@ -93,14 +93,14 @@ a {
 /* My Work */
 .gallery {
   display: flex;
-  margin-top: 2rem; /* Pushes the gallery down from the top */
+  margin-top: 2rem;
 }
 
 .leftColumn {
   position: relative;
   height: 100vh;
   width: 20vw;
-  min-width: 120px;
+  min-width: 7.5rem; 
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -136,10 +136,10 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 0.3rem; /* Small gap for separation */
+  gap: 0.3rem;
   width: 100%;
-  max-width: 420px;   /* 3 x 140px columns, adjust as needed */
-  height: 360px;      /* 3 x 120px rows */
+  max-width: 26.25rem; 
+  height: 22.5rem; 
   margin: 2rem auto;
 }
 
@@ -148,7 +148,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   box-shadow: none;
   background: #fff;
   display: block;
@@ -163,7 +163,7 @@ a {
 .centerGrid img:hover {
   transform: scale(1.15);
   z-index: 2;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  box-shadow: 0 0.25rem 1.5rem rgba(0,0,0,0.18); 
 }
 
 .centerGridImg {
@@ -180,10 +180,10 @@ a {
 
 .centerGridImg img {
   width: 100%;
-  height: auto;         
-  aspect-ratio: 1/1;   
+  height: auto;
+  aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 0.25rem; 
   box-shadow: none;
   display: block;
 }
@@ -198,7 +198,7 @@ a {
 }
 
 .galleryInfo {
- width: 30%;
+  width: 30%;
 }
 
 /* Lightbox */
@@ -224,20 +224,20 @@ a {
 #lightbox-img {
   max-width: 80vw;
   max-height: 80vh;
-  border-radius: 12px;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.5);
+  border-radius: 0.75rem; 
+  box-shadow: 0 0.25rem 2rem rgba(0,0,0,0.5); 
 }
 
 #lightbox-close {
   position: absolute;
-  top: -20px;
-  right: -20px;
+  top: -1.25rem; 
+  right: -1.25rem;
   background: #fff;
   border: none;
   border-radius: 50%;
   font-size: 2rem;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem; 
+  height: 2.5rem; 
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.2); /* 2px 8px */
 }

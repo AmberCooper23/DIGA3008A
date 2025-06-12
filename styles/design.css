@@ -1,99 +1,97 @@
 .designContainer {
-  gap: 20px;
-  padding: 30px;
-  max-width: fit-content;
-  margin: auto;
+  gap: clamp(1rem, 2vw, 1.25rem);
+  padding: clamp(1.25rem, 3vw, 1.875rem);
+  max-width: min(90%, 1200px);
+  margin: 0 auto;
   background-color: var(--color4);
 }
 
 .designTitle {
-  font-size: large;
-  margin-bottom: 10px;
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  margin-bottom: 0.75em;
   background-color: var(--color3);
 }
 
 .h-entry {
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: clamp(0.5rem, 1vw, 0.625rem);
+  border-radius: clamp(0.5rem, 1vw, 0.625rem);
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
   background: #fff;
 }
 
 .u-photo {
-  width: 500px;
-  height: 400px;
-  border-radius: 10px;
+  width: min(100%, 31.25rem);
+  height: auto;
+  aspect-ratio: 5/4;
+  border-radius: clamp(0.5rem, 1vw, 0.625rem);
+  object-fit: cover;
 }
 
 .paragraphs {
-  font-size: 16px;
+  font-size: clamp(0.875rem, 1.1vw, 1rem);
+  line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .header {
     flex-direction: column;
     align-items: flex-start;
-    font-size: large;
-    padding: 15px;
+    font-size: clamp(1rem, 4vw, 1.125rem);
+    padding: clamp(0.75rem, 2vw, 0.9375rem);
   }
 
   .navLinks ul {
     flex-direction: column;
-    gap: 10px;
+    gap: clamp(0.5rem, 1.5vw, 0.625rem);
   }
 
   .navLinks button {
-    font-size: medium;
+    font-size: clamp(0.875rem, 3vw, 1rem);
     width: 100%;
-    padding: 10px;
+    padding: clamp(0.5rem, 1.5vw, 0.625rem);
   }
 
   .designContainer {
-    padding: 15px;
+    padding: clamp(0.75rem, 2vw, 0.9375rem);
     width: 100%;
     max-width: 100%;
   }
 
-  .u-photo {
-    width: 100%;
-    height: auto;
-  }
-
   .paragraphs {
-    font-size: 15px;
+    font-size: clamp(0.8125rem, 3vw, 0.9375rem);
   }
 
   footer {
     flex-direction: column;
-    gap: 10px;
+    gap: clamp(0.5rem, 1.5vw, 0.625rem);
     text-align: center;
-    padding: 20px;
+    padding: clamp(1rem, 3vw, 1.25rem);
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .header {
-    font-size: medium;
+    font-size: clamp(0.875rem, 4vw, 1rem);
   }
 
   .nav-u-url {
-    font-size: small;
+    font-size: clamp(0.75rem, 3vw, 0.875rem);
   }
 
   .navLinks button {
-    font-size: small;
-    padding: 8px;
+    font-size: clamp(0.75rem, 3vw, 0.875rem);
+    padding: clamp(0.375rem, 1.5vw, 0.5rem);
   }
 
   .designTitle {
-    font-size: medium;
+    font-size: clamp(0.875rem, 4vw, 1rem);
   }
 
   .paragraphs {
-    font-size: 14px;
+    font-size: clamp(0.75rem, 3vw, 0.875rem);
   }
 
   .copyright {
-    font-size: x-small;
+    font-size: clamp(0.625rem, 2.5vw, 0.75rem);
   }
 }
