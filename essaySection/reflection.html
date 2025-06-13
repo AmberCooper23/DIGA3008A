@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Amber Cooper" />
+    <meta
+      name="description"
+      content="Reflection on the Implementation of the Website, UI and UX Design, and the Challenges Faced"
+    />
+
+    <title>Reflection on the Implementation of the Website</title>
+    <link class="u-url" rel="stylesheet" href="../styles/blog.css" />
+    <link rel="stylesheet" href="../styles/root.css" />
+    <script defer src="../scripts/gen.js"></script>
+  </head>
+
+  <body>
+    <header class="header" href="../index.html">
+      Amber Alert
+      <nav class="navLinks">
+        <ul class="navBar">
+          <li>
+            <a class="nav-u-url" href="../index.html">
+              <button class="navButton">home</button></a
+            >
+          </li>
+          <li>
+            <a class="nav-u-url" href="../blogs/blogPage.html"
+              ><button class="navButton">blogs</button></a
+            >
+          </li>
+          <li>
+            <a class="nav-u-url" href="../essaySection/essayPage.html"
+              ><button class="navButton active">essays</button></a
+            >
+          </li>
+          <li>
+            <a class="nav-u-url" href="../designSection/designPage.html"
+              ><button class="navButton">design</button></a
+            >
+          </li>
+          <li>
+            <a class="nav-u-url" href="../portfolioSection/portfolioPage.html"
+              ><button class="navButton">portfolio</button></a
+            >
+          </li>
+        </ul>
+      </nav>
+   <label id="modeToggleLabel" class="toggle-switch" aria-label="Toggle light/dark mode">
+      <input type="checkbox" id="modeToggle" />
+      <span class="slider"></span>
+      <span class="toggleText"> Dark Mode </span>
+    </label>
+    </header>
+    <main class="blogContainer">
+      <section class="h-entry">
+        <h1 class="p-name">Reflection on the Implementation of the Website </h1>
+        <p class="paragraphs">
+Throughout the semester, I worked on a website called Amber Alert. The goal of the website was to showcase my development journey, as well as my work. My website features weekly blogs where I upload my weekly discussions, a design section where I discuss the design processes and elements that went into the website, an essay section for the essays I wrote this semester for this class, and a portfolio section to showcase things I am proud of.         </p>
+<h2 class="headingBackground">Folder Structure</h2>
+<p class="paragraphs">
+An underestimated part of web development is folder structure, as this can make or break your work. I learnt that you need to structure your folders in a way that makes sense to you, but would also make to someone else, making the project folder understandable to others. It also matters that you don’t have too many folders, and that your files are placed systematically, so that you don’t have issues with referencing. </p>
+<p class="paragraphs">
+My folder structure separates the different html pages into the sections of my website, and I kept my CSS and JS in their own respective folders. I also kept all my Images in their own folder and then made a separate folder inside the Images folder for the art that goes in my portfolio. This allowed for my work to stay organised and sensical to me. I also made sure to be consistent in the naming conventions, keeping everything in camel case. </p>
+<figure>
+            <img
+              src="../images/reflectionScreenshots/fileStructure.png"
+              alt="folder structure screenshot"
+              class="u-photo "
+            />
+            <figcaption>Screenshot of my Folder Structure</figcaption>
+          </figure>
+
+<p class="paragraphs">
+Each section homepage html file is named as [sectionName]Page to separate it from everything else. </p>
+<figure>
+            <img
+              src="../images/reflectionScreenshots/blogPageFileName.png"
+              alt="homepage file name screenshot"
+              class="u-photo "
+            />
+            <figcaption>Screenshot of Homepage HTML File Name</figcaption>
+          </figure>
+<p class="paragraphs">
+When it comes to my weekly blogs, I have chosen to just title the html files by the week. The whole point of the website is to showcase what I learn every week, so it made a lot of sense to keep it as the week numbers rather than giving each week its own titles. This works out better in the long run when there are many more weekly blogs, as they can all be found under blogs. If it gets to that point, I might have to consider subfolders, as that adds another level of organisation. </p>
+<p class="paragraphs">
+My CSS file names are consistent with the whole project, naming homepages as [sectionName]Page. I believe that consistency in labels and names is incredibly important and avoids a lot of confusion and mixing up. Having clear labels in a project is so helpful when working in teams, to avoid multiple working on the same file simultaneously. </p>
+<figure>
+            <img
+              src="../images/reflectionScreenshots/cssFileName.png"
+              alt="css file name screenshot"
+              class="u-photo "
+            />
+            <figcaption>Screenshot of CSS File Names</figcaption>
+          </figure>
+
+<h2 class="headingBackground">Semantic Markup</h2>
+<p class="paragraphs">
+For my semantic mark-ups, I kept the same format for similar pages and avoided divs. I wanted my semantic mark-up to be clear in its use, so I used <section> for sections, <main> for the main content of my page, <p> for my paragraphs, etc. </p>
+<figure>
+            <img
+              src="../images/reflectionScreenshots/semanticMarkup.png"
+              alt="semantic markup screenshot"
+              class="u-photo "
+            />
+            <figcaption>Screenshot of Semantic Markup Use on blogPage.html</figcaption>
+          </figure>
+    <p class="paragraphs">
+In terms of Interface Elements, I used buttons for my NavBar, my toTopButton and my hamburger menu and my different clickable cards. </p>
+<h2 class="headingBackground">Meta Data</h2>
+<p class="paragraphs">
+    Meta Data communicates the important information for search engines. This ensures your site functions, can be found, and is linked to your name as the author. 
+    </p>
+    <p class="paragraphs">
+        The meta tag is used for metadata elements that don’t have their own tags (title, link, script, etc). I used <meta> for charset, viewport, author, description. 
+    </p>
+    <figure>
+            <img
+              src="../images/reflectionScreenshots/metaTagExamples.png"
+              alt="meta data screenshot"
+              class="u-photo "
+            />
+            <figcaption>Screenshot of Meta Tag Use on index.html</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../images/reflectionScreenshots/metaDataUsed.png"
+              alt="meta data screenshot"
+              class="u-photo "
+            />
+            <figcaption>Screenshot of Meta Data Use on blogPage.html</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="../images/reflectionScreenshots/tableScreenshot.png"
+              alt="Table Representing Meta Data Use"
+              class="u-photo "
+            />
+
+<h2 class="headingBackground">CSS</h2>
+<p class="paragraphs">
+    For my CSS, I did my best to avoid repetition. I have a CSS file for each homepage, and then a CSS file for the content types. This means for each section I have 2 CSS files (except for my portfolio page). I also have a root.css file which serves as a common file. Any repeating elements are in the root.css, so that I did not have to restyle the same thing for each page. This also helps to not overcomplicate or oversaturate files. This is important for maintaining the organisation of your folders.
+</p>
+<figure>
+            <img
+              src="../images/reflectionScreenshots/CSSFileNames.png"
+              alt="css file name screenshot"
+              class="u-photo "
+            />
+            <figcaption>Screenshot of CSS Files</figcaption>
+          </figure>
+          <p class="paragraphs">
+            I also made sure not to use px, as advised by my lecturers. Instead of px, I used rem. Px is a fixed value, whereas rem is relative based on root font size. Not only does this help with responsiveness, but it also makes it accessible for visually impaired users who have custom font sizes. </p>
+
+            <h2 class="headingBackground">JavaScript</h2>
+            <p class="paragraphs">
+                For JavaScript, I wanted interactive elements that wouldn’t overwhelm the user. I have a Dark Mode, an Art Wheel, a Hamburger Menu and a Lightbox. 
+            </p>
+            <p class="paragraphs">
+                Like my CSS files, I have a gen.js which includes all my general JavaScript (JavaScript that affects the whole website, not just elements of a page). 
+            </p>
+<figure>
+            <img
+              src="../images/reflectionScreenshots/JSFileName.png"
+              alt="JavaScript file name screenshot"
+              class="u-photo "
+            />
+            <figcaption>Screenshot of JavaScript Files</figcaption>
+          </figure>  
+          <p class="paragraphs">
+                I encountered problems where my Hamburger Menu wouldn’t run if it was being deferred, so I put it inside the body instead of the head. I recognise that this is not good practice, however I opted for functionality in this case, as it was necessary for accessibility. 
+For all my other JavaScript files I did use defer. Deferred scripts only execute after the HTML is loaded and the DOM is fully constructed this means that the script runs smoothly and can safely interact with the page. DOM manipulation is important because it allows you to modify and interact with the structure, style and content using JavaScript. 
+          </p>
+          <p class="paragraphs">
+                 For my Dark Mode toggle feature, I used API to store the theme locally. This means that if the user switches sections, or closes the tab, the theme setting stays. 
+                 </p>
+    <figure>
+            <img
+              src="../images/reflectionScreenshots/darkModeAPI.png"
+              alt="Dark Mode API screenshot"
+              class="u-photo "
+            />
+            <figcaption>Screenshot of Dark Mode API Use</figcaption>
+                 
+
+<h2 class="postTitle">
+          Conclusion
+        </h2>
+        <p class="paragraphs">
+        In conclusion, when designing my website, I had both the user and the developer/s in mind. When it comes to the user, I wanted them to feel in control. They weren’t overwhelmed with JavaScript features, and they could change the display theme. As for the developer/s, I prioritised organisation and easy navigation. If someone were to work on my website, they’d understand the folder structure, quickly adapt to the page formatting and understand my intentions in the HTML. 
+        </p>
+        </section>
+        <button id="toTopBtn">↑</button>
+        <script src="../scripts/hamburgerMenu.js"></script>
+    </main>
+    <footer>
+      <p class="footerText">
+        Ambers Alert is a website where I showcase my work as a 3rd year
+        university student, highlighting my web development journey.
+      </p>
+      <p class="footerText">
+        © This website is not affiliated with the official Amber Alert for
+        Missing Persons, and claims no responsibility for reporting
+        missing children.
+      </p>
+    </footer>
+  </body>
+</html>
