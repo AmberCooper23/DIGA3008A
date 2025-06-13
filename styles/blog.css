@@ -41,6 +41,7 @@
   background: #fff;
 }
 
+/* images */
 .u-photo {
   width: min(100%, 40rem);
   height: auto;
@@ -52,6 +53,7 @@
 .figure {
   max-width: min(100%, 15.625rem);
 }
+
 
 .postTitle {
   font-size: clamp(1rem, 1.5vw, 1.125rem);

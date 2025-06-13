@@ -117,7 +117,7 @@ body.dark-mode .blogContainer {
 /* NAV BAR BUTTONS */
 
 .navLinks button {
-  /* background: var(--headerBackground); */
+  background: var(--headerBackground);
   color: var(--textColours);
   border: none;
   border-radius: 0.5rem;

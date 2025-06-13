@@ -28,6 +28,20 @@
   margin: auto;
 }
 
+/* images */
+.u-photo {
+  width: min(100%, 40rem);
+  height: auto;
+  border-radius: clamp(0.5rem, 1vw, 0.625rem);
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.figure {
+  max-width: min(100%, 15.625rem);
+}
+
+
 @media (max-width: 48rem) {
   .header {
     flex-direction: column;
