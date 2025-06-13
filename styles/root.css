@@ -97,7 +97,7 @@ body.dark-mode .blogContainer {
 }
 
 .navLinks ul {
-  display: flex;
+  /* display: flex; */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -228,4 +228,79 @@ footer {
   background-color: var(--color2);
   color: var(--color4);
   transform: scale(1.1);
+}
+
+/* Hamburger button styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.hamburger span {
+  display: block;
+  width: 2rem;
+  height: 0.22rem;
+  margin: 0.3rem 0;
+  background: var(--color1, #3f2a53);
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+}
+
+/* Hamburger animation when open */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(0.52rem) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-0.52rem) rotate(-45deg);
+}
+
+/* Hide navBar by default on small screen */
+@media (max-width: 700px) {
+  .navBar {
+    display: none;
+    flex-direction: column;
+    background: var(--color4, #e6eff8);
+    position: absolute;
+    top: 3.5rem;
+    right: 1rem;
+    min-width: 10rem;
+    box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.08);
+    border-radius: 0.5rem;
+    z-index: 1000;
+    padding: 1rem 0;
+  }
+  .navBar.open {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* large screens, show navBar, hide hamburger */
+@media (min-width: 701px) {
+  .navBar {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  .hamburger {
+    display: none;
+  }
 }
