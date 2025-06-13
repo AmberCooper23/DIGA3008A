@@ -8,8 +8,8 @@
   border-radius: 0.625rem;
 }
 
-/* images */
-.u-photo {
+
+/* .u-photo {
   width: min(100%, 40rem);
   height: auto;
   border-radius: clamp(0.5rem, 1vw, 0.625rem);
@@ -19,7 +19,7 @@
 
 .figure {
   max-width: min(100%, 15.625rem);
-}
+} */
 
 
 @media (max-width: 48rem) {
