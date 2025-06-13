@@ -117,7 +117,7 @@ body.dark-mode .blogContainer {
 /* NAV BAR BUTTONS */
 
 .navLinks button {
-  background: var(--headerBackground);
+  /* background: var(--headerBackground); */
   color: var(--textColours);
   border: none;
   border-radius: 0.5rem;
@@ -238,7 +238,7 @@ footer {
   align-items: center;
   width: 2.5rem;
   height: 2.5rem;
-  background: none;
+  background: var(--color3);
   border: none;
   cursor: pointer;
   z-index: 1100;
@@ -256,7 +256,7 @@ footer {
   transition: all 0.3s cubic-bezier(.4,2,.6,1);
 }
 
-/* Hamburger animation when open */
+/* Hamburger animation */
 .hamburger.open span:nth-child(1) {
   transform: translateY(0.52rem) rotate(45deg);
 }
